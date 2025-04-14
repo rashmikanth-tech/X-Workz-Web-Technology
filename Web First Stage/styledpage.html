@@ -73,6 +73,23 @@
             background-color: #fdebd0;
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3a3f58;
+            color: white;
+        }
+
         footer {
             text-align: center;
             background-color: #3a3f58;
@@ -90,15 +107,7 @@
             border: none;
             border-radius: 5px;
         }
-        #click {
-            background-color: #3498db;
-            color: white;
-            padding: 5px 10px;
-            font-size: 16px;
-            border: 10%;
-            border-radius: 2px;
-        }
-
+        
         #btn:hover {
             background-color: #2980b9;
         }
@@ -114,24 +123,37 @@
         <h1>About Me</h1>
         <p>Hi! I'm <span class="highlight">Rashmikanth</span>, a tech enthusiast and web developer who loves designing creative websites.</p>
         
-        <div id="quote-box">
-            <p>"Success is not final, failure is not fatal: it is the courage to continue that counts." – Winston Churchill</p>
-        </div>
-
-        <div class="container">
-            <section>
-                <h2>Learn Before Earn</h2>
-                <p>Lets Do some Job <span class="highlight">You need to become full-stack developer?</span> and contribute to open-source projects?</p>
-            </section>
-
-            <aside>
-                <h3>Fun Fact</h3>
-                <p>Did you know? The first website was created by Tim Berners-Lee in 1991!</p>
-            </aside>
-        </div>
+        <h2>Programming Languages</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Type</th>
+                <th>First Appeared</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>High-Level</td>
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Object-Oriented</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Scripting</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>Object-Oriented</td>
+                <td>2000</td>
+            </tr>
+        </table>
 
         <details>
-            <summary id="click">CLick Here To add details</summary>
+            <summary>Click Here To add details</summary>
             <div>
                 <form> 
                     <div>
@@ -170,56 +192,59 @@
                     </div>
                     <br>
                     <div>
-                        <label>Interested Core</label>
+                        <label for="dropdown">Select Your Role</label>
                         <span style="color: red;">*</span>
-                        <span>:</span><br><br>
-        
-                        <input type="checkbox" id="core1" value="C++">
-                        <label for="core1">C++</label><br>
-        
-                        <input type="checkbox" id="core2" value="Python">
-                        <label for="core2">Python</label><br>
-        
-                        <input type="checkbox" id="core3" value="HTML">
-                        <label for="core3">HTML</label><br>
-        
-                        <input type="checkbox" id="core4" value="Java">
-                        <label for="core4">Java</label><br>
-        
-                        <input type="checkbox" id="core5" value="C#">
-                        <label for="core5">C#</label><br>
+                        <span>:</span>
+                        <select id="dropdown" required>
+                            <option value="">--Select an option--</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dropdown2">Preferred Programming Language</label>
+                        <span style="color: red;">*</span>
+                        <span>:</span>
+                        <select id="dropdown2" required>
+                            <option value="">--Select an option--</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="csharp">C#</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Gender</label>
+                        <span style="color: red;">*</span>
+                        <span>:</span>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female" required> Female
+                        <input type="radio" name="gender" value="other" required> Other
+                    </div>
+                    <br>
+                    <div>
+                        <label>Interests</label>
+                        <span>:</span>
+                        <input type="checkbox" name="interest" value="coding"> Coding
+                        <input type="checkbox" name="interest" value="designing"> Designing
+                        <input type="checkbox" name="interest" value="gaming"> Gaming
+                        <input type="checkbox" name="interest" value="reading"> Reading
                     </div>
                     <br>
                     <button id="btn">Click Me!</button>
                 </form>
             </div>
-            
         </details>
-        <div>
-            <tr>
-            <th>X</th>
-            <th>X</th>
-            <th>O</th>
-        </tr>
-            <div>
-                <tr>
-                <td>O</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-            </div>
-            <tr>
-                <td>X</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-        </div>
-        <iframe width="100%" height="100vh" src="https://www.youtube.com/embed/XBwRP2oFwTM" title="YouTube Video Player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
     </div>
+    <iframe width="100%" height="100vh" src="https://www.youtube.com/embed/XBwRP2oFwTM" title="YouTube Video Player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+    
     <footer>
          2025 Rashmikanth Webpage | Made with ❤️
     </footer>
