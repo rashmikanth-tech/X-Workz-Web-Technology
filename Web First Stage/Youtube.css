@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    flex-wrap: wrap; /* Ensures that elements wrap when needed */
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    margin-right: 20px; /* Space between menu icon and logo */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 24px; /* Reduced size to make logo smaller */
+    margin-right: 8px; /* Space between logo and name */
+}
+
+.youtube-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-center {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-width: 0; /* Ensures it doesn't push other items */
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px 40px 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #212121;
+    color: white;
+    font-size: 16px;
+    width: 400px;
+    max-width: 500px; /* Set max width for the search bar */
+    min-width: 200px; /* Set min width for smaller screens */
+}
+
+.search-icon, .voice-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.search-icon {
+    left: 12px;
+}
+
+.voice-icon {
+    right: 12px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-item {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .search-wrapper {
+        width: 100%;
+    }
+    .nav-center {
+        width: 100%;
+    }
+    .search-bar {
+        width: 300px; 
+    }
+}

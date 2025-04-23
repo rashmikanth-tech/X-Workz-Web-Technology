@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link rel="icon" href="Youtube.avif" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 </head>
 <body>
-    <div>
-        <table width="100%">
-            <tr>
-                <td width="5%">
-                    <img src="Youtube.avif" alt="YouTube Logo" width="50" height="30">
-                </td>
-                <td width="10%">
-                    <strong>YouTube</strong>
-                </td>
-                <td width="85%">
-                    <input type="text" placeholder="Search" style="width: 80%; padding: 10px; border: 1px solid #060505; border-radius: 20px; font-size: 16px;">
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td>
-                    <button style="width: 100%; padding: 10px; border: 1px solid #060505; border-radius: 200px; font-size: 16px;">Home</button>
-                </td>
-                <td>
-                    <button style="width: 100%; padding: 10px; border: 1px solid #060505; border-radius: 200px; font-size: 16px;">Shorts</button>
-                </td>
-            </tr>
-        </table>
+  <header>
+    <div class="navbar">
+      <div class="nav-left">
+        <i class="fas fa-bars menu-icon"></i>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+          class="youtube-logo"
+          alt="YouTube Logo"
+        />
+      </div>
+
+      <div class="nav-center">
+        <div class="search-wrapper">
+            <img
+            src="your-icon-folder/0220676b-8788-4d26-ba8b-8b193598716d.png"
+            class="search-icon"
+            alt="Search Icon"
+        
+          />
+          <input type="text" placeholder="Search" class="search-bar"/>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Voice_Search_Icon.png"
+            class="voice-icon"
+            alt="Voice Search"
+          />
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="icon-btn">
+          <i class="fas fa-video"></i>
+          Create
+        </button>
+        <button class="icon-btn">
+          <i class="fas fa-bell"></i>
+        </button>
+        <img
+          src="https://yt3.ggpht.com/yti/AHyvSCBncmE6zNcBQKq9N3bGkMeuvog91z8kLhTbaOGk=s88-c-k-c0x00ffffff-no-rj-mo"
+          class="profile-pic"
+          alt="Profile"
+        />
+      </div>
+    </div>
+  </header>
+
+  <div>
+    <table>
+      <tr>
+        <td>
+          <button class="nav-btn">Home</button>
+        </td>
+        <td>
+          <button class="nav-btn">Shorts</button>
+        </td>
+      </tr>
+    </table>
 
     <div id="video-container">
-        <table>
-            <tr>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/jsZn3oq-FCA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                   <h1> <p>Description for video 1</p></h1>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/HscrSwilshM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 2</p>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/j47pl54irSc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 3</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/joR5POeNcnk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 4</p>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/NfkOLYpMhu0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 5</p>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/KRFyXA4eHnA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 6</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/x4KngXtOlNo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 7</p>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/6FURuLYrR_Q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 8</p>
-                </td>
-                <td>
-                    <iframe width="360" height="215" src="https://www.youtube.com/embed/RDMJWI0pUcE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                    <p>Description for video 9</p>
-                </td>
-            </tr>
-        </table>
+      <table>
+        <tr>
+          <td>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/jsZn3oq-FCA" frameborder="0" allowfullscreen></iframe>
+            <p>Description for video 1</p>
+          </td>
+          <td>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/HscrSwilshM" frameborder="0" allowfullscreen></iframe>
+            <p>Description for video 2</p>
+          </td>
+          <td>
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/j47pl54irSc" frameborder="0" allowfullscreen></iframe>
+            <p>Description for video 3</p>
+          </td>
+        </tr>
+        <!-- more rows -->
+      </table>
     </div>
+  </div>
 </body>
 </html>
