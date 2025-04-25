@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="workform.js"></script>
+</head>
+
+<body>
+    <form name="formName" onsubmit="submitForm()">
+        <h1>Info Form</h1>
+        <div>
+            <label for="nameId">Name</label>
+            <span style="color: red;">*</span>
+            <span></span>
+            <span>:</span>
+            <input type="text" id="nameId" name="nameName" required>
+        </div>
+        <div>
+            <label for="numID">Number</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="number" id="numID" name="numberNumber" required>
+        </div>
+        <div>
+            <label for="genderId">Gender</label>
+            <span style=" color: red;">*</span>
+            <span>:</span>
+
+
+            <input type="radio" id="genderId" name="Gender" required>Male
+            <input type="radio" id="genderId" name="Gender">Female
+        </div>
+        <div>
+            <label for="ageId">Age</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="number" id="ageId" name="ageAge">
+        </div>
+        <div>
+            <label for="mailId">Email</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="email" id="mailId" name="emailEmail">
+        </div>
+        <div>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Clear">Clear</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
