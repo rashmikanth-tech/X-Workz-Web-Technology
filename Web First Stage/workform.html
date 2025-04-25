@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form name="formName" onsubmit="submitForm()">
+    <form name="formName" onsubmit="return submitForm()">
         <h1>Info Form</h1>
         <div>
             <label for="nameId">Name</label>
@@ -19,7 +19,7 @@
             <input type="text" id="nameId" name="nameName" required>
         </div>
         <div>
-            <label for="numID">Number</label>
+            <label for="numID">Mobile Number</label>
             <span style="color: red;">*</span>
             <span>:</span>
             <input type="number" id="numID" name="numberNumber" required>
@@ -37,13 +37,13 @@
             <label for="ageId">Age</label>
             <span style="color: red;">*</span>
             <span>:</span>
-            <input type="number" id="ageId" name="ageAge">
+            <input type="number" id="ageId" name="ageAge" required>
         </div>
         <div>
             <label for="mailId">Email</label>
             <span style="color: red;">*</span>
             <span>:</span>
-            <input type="email" id="mailId" name="emailEmail">
+            <input type="email" id="mailId" name="emailEmail" required>
         </div>
         <div>
             <button type="submit" value="Submit">Submit</button>
