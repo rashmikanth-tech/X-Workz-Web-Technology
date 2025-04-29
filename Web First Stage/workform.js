@@ -1,5 +1,11 @@
 function onClick() {
-    alert("form is Submitted")
+    
+   let doThis = document.getElementsByClassName("numClass")[0].innerHTML='Please provide Minimum Number'
+  console.log('done now',doThis)
+
+  document.getElementsByClassName("yenriMedia")[0].innerHTML;
+  document.getElementsByClassName("YakriMedia")[0].innerHTML;
+}
 }
 function submitForm() {
     let valu = true;
@@ -13,6 +19,7 @@ function submitForm() {
 
     if (numInput.length > 10 && numInput.length < 30) {
         valu = true;
+        errorcheck();
     }
     else {
         valu = false;
@@ -20,6 +27,7 @@ function submitForm() {
     }
     if (nameInput.length > 6 && nameInput.length < 30) {
         valu = true;
+        errorcheck();
     }
     else {
         valu = false;
@@ -28,6 +36,7 @@ function submitForm() {
 
     if (ageInput > 18 && ageInput < 70) {
         valu = true;
+        errorcheck();
     }
     else {
         valu = false;
@@ -35,4 +44,7 @@ function submitForm() {
     }
     return valu
 
+}
+function errorcheck(){
+    alert("error is working")
 }
