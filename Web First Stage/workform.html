@@ -9,10 +9,8 @@
 </head>
 
 <body>
-    <span class="numClass"><input type="button" value="ClickHere"  onclick="onClick()">  </span>
-  <span class="yenriMedia">YenriMedia</span>
-  <span class="yakriMedia">Yakrimedia</span>
-   
+    <!-- <span class="numClass"><input type="button" value="ClickHere"  onclick="onClick()">  </span>
+   -->
     <form name="formName" onsubmit="return submitForm()">
         <h1>Info Form</h1>
         <div>
@@ -21,35 +19,37 @@
             <span></span>
             <span>:</span>
             <input type="text" id="nameId" name="nameName" required>
+            <span id="nameError"></span>
         </div>
         <div>
             <label for="numID">Mobile Number</label>
             <span style="color: red;">*</span>
             <span>:</span>
             <input type="number" id="numID" name="numberNumber" required>
+            <span id="numError"></span>
         </div>
         <div>
-            <label for="genderId">Gender</label>
+            <!-- <label for="genderId">Gender</label>
             <span style=" color: red;">*</span>
             <span>:</span>
 
 
             <input type="radio" id="genderId" name="Gender" required>Male
             <input type="radio" id="genderId" name="Gender">Female
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
             <label for="ageId">Age</label>
             <span style="color: red;">*</span>
             <span>:</span>
             <input type="number" id="ageId" name="ageAge" required>
         </div>
-        <div>
-            <label for="mailId">Email</label>
+        <div> -->
+            <!-- <label for="mailId">Email</label>
             <span style="color: red;">*</span>
             <span>:</span>
             <input type="email" id="mailId" name="emailEmail" required>
         </div>
-        <div>
+        <div> -->
             <button type="submit" value="Submit">Submit</button>
             <button type="reset" value="Clear">Clear</button>
         </div>
